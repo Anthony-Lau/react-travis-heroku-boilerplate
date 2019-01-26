@@ -1,10 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Steps to deploy to Heroku from Github using Travis CI
+# Steps to deploy React app to Heroku from Github using Travis CI
 
 ## 1. Connect travis to Github
 
 - Go to the [travis website](travis-ci.org) and click the `+` to add your projects repository.
+
+#### Add your heroku api key to travis environment variables
+
+- Select your repository in travis and click the `more options` dropdown 
+
+- Under settings add your heroku api key
 
 ## 2. Connect Heroku to Github
 
@@ -22,4 +28,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Under `Automatic Deploys` select wait for CI to pass before deploy
 
+## 3. Edit your .travis.yml file
+
+- In the .travis.yml file, under `deploy` `app` edit your appname to be whatever you called it in heroku.
+
 # Hooray you're done!
+
+- Every push to master will deploy your react app.
