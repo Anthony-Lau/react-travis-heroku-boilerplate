@@ -1,68 +1,25 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Steps to deploy to Heroku from Github using Travis CI
 
-In the project directory, you can run:
+## 1. Connect travis to Github
 
-### `npm start`
+- Go to the [travis website](travis-ci.org) and click the `+` to add your projects repository.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 2. Connect Heroku to Github
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+#### This assumes you have connected your github account to heroku
 
-### `npm test`
+- Go to the [heroku site](https://www.heroku.com/) and click the `new` dropdown
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Select `Create new app` and enter name of new app (your domain will be `appname`.herokuapp.com)
 
-### `npm run build`
+- Click the `deploy` tab
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Under deployment method select `Github` as your preferred method
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- Under `Connect to Github` enter the name of your repo you want to deploy
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Under `Automatic Deploys` select wait for CI to pass before deploy
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# Hooray you're done!
